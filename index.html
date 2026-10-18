@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className="js"</script>
+<title>Murtadha Kamil – Cybersecurity Engineer &amp; IT Specialist</title>
+<meta name="description" content="Cybersecurity engineering student and IT support specialist in Baghdad. Linux, networking, Active Directory, homelab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--surface:#e2e8ee;--ink:#14213d;--muted:#4a5a70;--line:#c3cdd8;--accent:#0b6e8a;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1722;--surface:#17222f;--ink:#e8eef5;--muted:#9fb0c3;--line:#2a3a4d;--accent:#5cc4e0;--accent-ink:#0f1722}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+header.top{padding:clamp(3rem,10vw,7rem) 0 3rem}
+h1{font-size:clamp(2.8rem,10vw,6rem);font-weight:800;letter-spacing:-.03em}
+.role{font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:clamp(1.15rem,3.5vw,1.6rem);color:var(--muted);margin:1rem 0 1.75rem}
+.lead{max-width:38rem;margin:0 0 2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:.4rem;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--ink);border-color:var(--line)}
+.btn:hover{border-color:var(--ink)}
+.host{margin-top:3rem;padding:1rem 1.25rem;background:var(--surface);border-inline-start:4px solid var(--accent);border-radius:.4rem;border-start-start-radius:0;border-end-start-radius:0;max-width:38rem}
+.host b{font-family:"Bricolage Grotesque",sans-serif}
+.host p{margin:.25rem 0 0;color:var(--muted);font-size:.98rem}
+section{display:grid;grid-template-columns:1fr;gap:1rem;padding:2.5rem 0;border-top:1px solid var(--line)}
+section>h2{font-size:1.5rem}
+@media(min-width:760px){section{grid-template-columns:12rem 1fr;gap:2rem}section>h2{position:sticky;top:1.5rem;align-self:start}}
+.item+.item{margin-top:1.75rem}
+.item h3{font-size:1.2rem}
+.meta{color:var(--muted);font-size:.95rem;margin:.2rem 0 .6rem}
+ul{margin:.5rem 0 0;padding-inline-start:1.2rem}
+li+li{margin-top:.3rem}
+dl{margin:0}
+dt{font-weight:600;margin-top:1rem}
+dt:first-child{margin-top:0}
+dd{margin:.15rem 0 0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+#bar{position:fixed;top:0;left:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:0 0;z-index:20}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:3.5rem}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.2rem}
+nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0}
+nav li+li{margin:0}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem;padding:.3rem 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+nav a:hover,nav a.on{color:var(--ink);border-color:var(--accent)}
+@media(max-width:560px){nav b{display:none}nav .wrap{justify-content:center}nav ul{gap:.8rem}nav a{font-size:.85rem}}
+section{scroll-margin-top:3.5rem}
+header.top{padding-top:clamp(2.5rem,8vw,5rem)}
+.hero{display:grid;gap:2rem;align-items:center}
+@media(min-width:800px){.hero{grid-template-columns:1fr 18rem;gap:3rem}}
+.photo{position:relative;isolation:isolate;width:min(13rem,58vw);aspect-ratio:1;justify-self:center;order:-1}
+@media(min-width:800px){.photo{width:18rem;order:0}}
+.photo::before{content:"";position:absolute;inset:-7px;border-radius:50%;z-index:0;background:conic-gradient(var(--accent),transparent 30%,var(--accent) 60%,transparent 90%,var(--accent));animation:spin 9s linear infinite}
+.photo span,.photo img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;border:6px solid var(--bg)}
+.photo span{z-index:1;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--muted);font:800 3.5rem "Bricolage Grotesque",sans-serif}
+.photo img{z-index:2;object-fit:cover}
+.dot{display:inline-block;width:.6rem;height:.6rem;margin-inline-end:.55rem;border-radius:50%;background:#2fb344;animation:pulse 2s infinite}
+.btn{transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.18)}
+.item{transition:transform .25s}
+.item:hover{transform:translateX(5px)}
+section>h2::after{content:"";display:block;height:3px;width:0;margin-top:.6rem;background:var(--accent);transition:width .8s .3s}
+section.in>h2::after{width:2.5rem}
+.js .hero-text>*,.js .photo{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+.js .hero-text>:nth-child(1){animation-delay:.1s}.js .hero-text>:nth-child(2){animation-delay:.22s}.js .hero-text>:nth-child(3){animation-delay:.34s}.js .hero-text>:nth-child(4){animation-delay:.46s}.js .hero-text>:nth-child(5){animation-delay:.58s}.js .photo{animation-delay:.3s}
+.js section{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.js section.in{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(1turn)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,179,68,.6)}100%{box-shadow:0 0 0 .6rem rgba(47,179,68,0)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,::before,::after{animation:none!important;transition:none!important}.js .hero-text>*,.js .photo,.js section{opacity:1;transform:none}}
+#lang{position:fixed;bottom:1rem;inset-inline-end:1rem;z-index:15;padding:.55rem 1.1rem;border-radius:2rem;border:2px solid var(--accent);background:var(--bg);color:var(--ink);font-family:inherit;font-weight:600;font-size:.95rem;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.18);transition:transform .2s}
+#lang:hover{transform:translateY(-2px)}
+html[lang=ar] *{font-family:"Cairo","Segoe UI",Tahoma,sans-serif}
+html[lang=ar] body{line-height:1.9}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{line-height:1.35;letter-spacing:0}
+[dir=rtl] .item:hover{transform:translateX(-5px)}
+[dir=rtl] #bar{transform-origin:100% 0}
+@media print{.actions,.host,nav,#bar,#lang{display:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<button id="lang" type="button">العربية</button>
+<nav aria-label="Main"><div class="wrap"><b>MK</b><ul>
+<li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+<div class="wrap">
+<header class="top"><div class="hero"><div class="hero-text">
+  <h1>Murtadha Kamil</h1>
+  <p class="role">Cybersecurity Engineer and IT Specialist, Baghdad</p>
+  <p class="lead">I’m a cybersecurity engineering student who works in IT support every day and runs my own servers at home. I like Linux, networks, and making systems secure and reliable.</p>
+  <div class="actions">
+    <a class="btn primary" href="MURTADHA_SAMI_KAMIL_CV.pdf" download>Download CV</a>
+    <a class="btn ghost" href="mailto:memoo4games@gmail.com">Email me</a>
+  </div>
+  <div class="host">
+    <b><i class="dot"></i>This site runs on my home server.</b>
+    <p>Ubuntu Server and Nginx, hosted from my own homelab in Baghdad.</p>
+  </div>
+</div>
+<div class="photo"><span>MK</span><img src="photo.jpg" alt="Portrait of Murtadha Kamil" onerror="this.remove()"></div>
+</div></header>
+
+<main>
+<section id="about">
+  <h2>About</h2>
+  <p>Motivated cybersecurity engineering student and IT support specialist with strong experience in Linux administration, CCNA-level networking, and technical support. I manage servers, configure networks, work with databases, and automate tasks with Python and C++. I diagnose hardware and software problems and secure IT infrastructure to keep performance high and data safe.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="item">
+    <h3>IT Support Specialist, Next Level</h3>
+    <p class="meta">Nov 2025 to present, Al-Zafraniya, Baghdad</p>
+    <ul>
+      <li>Troubleshoot hardware, software, and network issues for staff.</li>
+      <li>Manage Active Directory accounts, user permissions, and access controls.</li>
+      <li>Monitor network performance and keep systems running.</li>
+      <li>Run data backups, software updates, and security maintenance.</li>
+      <li>Give remote assistance with TeamViewer and Zoom.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="item">
+    <h3>HomeLab and local server management</h3>
+    <p>I designed and deployed a home server environment on Arch Linux and Ubuntu Server. It runs local network services, secure remote access, automated data backups, and containerized self-hosted apps. This website is one of them.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl>
+    <dt>Linux and system administration</dt>
+    <dd>Arch Linux (5+ years), Ubuntu Server, homelab maintenance, Bash scripting</dd>
+    <dt>Networking and cybersecurity</dt>
+    <dd>Cisco CCNA, network configuration, TCP/IP, security protocols, Active Directory</dd>
+    <dt>Programming and databases</dt>
+    <dd>Python, C++, PHP, JavaScript, HTML/CSS, MySQL</dd>
+    <dt>IT support and infrastructure</dt>
+    <dd>Hardware and software troubleshooting, remote support, system backups</dd>
+  </dl>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="item">
+    <h3>B.Eng. in Cybersecurity Engineering Technologies</h3>
+    <p class="meta">Israa University, Baghdad, Oct 2024 to present</p>
+    <p>Network security, ethical hacking, system administration, and hands-on lab work.</p>
+  </div>
+  <div class="item">
+    <h3>Cisco CCNA training</h3>
+    <p>IPv4/IPv6 addressing, VLANs, OSPF routing, switching, network security fundamentals, and hands-on lab configuration.</p>
+  </div>
+</section>
+
+<section id="languages">
+  <h2>Languages</h2>
+  <p>Arabic and English.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>The best way to reach me is by email: <a href="mailto:memoo4games@gmail.com">memoo4games@gmail.com</a></p>
+</section>
+</main>
+
+<footer>© <span id="y">2026</span> Murtadha Kamil</footer>
+</div>
+<script>
+(function(){var d=document;
+d.getElementById("y").textContent=new Date().getFullYear();
+var bar=d.getElementById("bar"),h=d.documentElement;
+function p(){var m=h.scrollHeight-h.clientHeight;bar.style.transform="scaleX("+(m>0?h.scrollTop/m:0)+")"}
+addEventListener("scroll",p,{passive:true});p();
+var links=[].slice.call(d.querySelectorAll("nav a")),secs=[].slice.call(d.querySelectorAll("section"));
+var a=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.12});
+var b=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(function(s){a.observe(s);b.observe(s)});
+})();
+</script>
+<script>
+(function(){
+var AR={"Murtadha Kamil": "مرتضى كامل", "Cybersecurity Engineer and IT Specialist, Baghdad": "مهندس أمن سيبراني واختصاصي تقنية معلومات، بغداد", "I’m a cybersecurity engineering student who works in IT support every day and runs my own servers at home. I like Linux, networks, and making systems secure and reliable.": "أنا طالب هندسة أمن سيبراني، أعمل في الدعم الفني يومياً وأدير خوادمي الخاصة في المنزل. أهتم بلينكس والشبكات وجعل الأنظمة آمنة وموثوقة.", "Download CV": "تحميل السيرة الذاتية", "Email me": "راسلني", "This site runs on my home server.": "هذا الموقع يعمل على خادمي المنزلي.", "Ubuntu Server and Nginx, hosted from my own homelab in Baghdad.": "Ubuntu Server وNginx، مستضاف من مختبري المنزلي في بغداد.", "About": "نبذة", "Experience": "الخبرة", "Projects": "المشاريع", "Skills": "المهارات", "Contact": "التواصل", "Education": "التعليم", "Languages": "اللغات", "Motivated cybersecurity engineering student and IT support specialist with strong experience in Linux administration, CCNA-level networking, and technical support. I manage servers, configure networks, work with databases, and automate tasks with Python and C++. I diagnose hardware and software problems and secure IT infrastructure to keep performance high and data safe.": "طالب هندسة أمن سيبراني واختصاصي دعم فني متحمس، لدي خبرة قوية في إدارة أنظمة لينكس والشبكات بمستوى CCNA والدعم التقني. أدير الخوادم وأضبط الشبكات وأعمل مع قواعد البيانات وأؤتمت المهام باستخدام Python وC++. أشخّص مشاكل العتاد والبرمجيات وأؤمّن البنية التحتية لتقنية المعلومات للحفاظ على الأداء العالي وسلامة البيانات.", "IT Support Specialist, Next Level": "اختصاصي دعم فني، Next Level", "Nov 2025 to present, Al-Zafraniya, Baghdad": "تشرين الثاني 2025 – الآن، الزعفرانية، بغداد", "Troubleshoot hardware, software, and network issues for staff.": "أشخّص مشاكل العتاد والبرمجيات والشبكات للموظفين وأحلها.", "Manage Active Directory accounts, user permissions, and access controls.": "أدير حسابات Active Directory وصلاحيات المستخدمين وضوابط الوصول.", "Monitor network performance and keep systems running.": "أراقب أداء الشبكة وأحافظ على استمرارية عمل الأنظمة.", "Run data backups, software updates, and security maintenance.": "أنفذ النسخ الاحتياطي للبيانات وتحديثات البرامج وصيانة الأمان.", "Give remote assistance with TeamViewer and Zoom.": "أقدم المساعدة عن بُعد عبر TeamViewer وZoom.", "HomeLab and local server management": "المختبر المنزلي وإدارة الخوادم المحلية", "I designed and deployed a home server environment on Arch Linux and Ubuntu Server. It runs local network services, secure remote access, automated data backups, and containerized self-hosted apps. This website is one of them.": "صممت ونشرت بيئة خوادم منزلية على Arch Linux وUbuntu Server. تشغّل خدمات شبكة محلية ووصولاً عن بُعد آمناً ونسخاً احتياطياً آلياً لبياناتي وتطبيقات مستضافة ذاتياً داخل حاويات. وهذا الموقع واحد منها.", "Linux and system administration": "لينكس وإدارة الأنظمة", "Networking and cybersecurity": "الشبكات والأمن السيبراني", "Programming and databases": "البرمجة وقواعد البيانات", "IT support and infrastructure": "الدعم الفني والبنية التحتية", "Arch Linux (5+ years), Ubuntu Server, homelab maintenance, Bash scripting": "Arch Linux (أكثر من 5 سنوات)، Ubuntu Server، صيانة المختبر المنزلي، برمجة Bash", "Cisco CCNA, network configuration, TCP/IP, security protocols, Active Directory": "Cisco CCNA، ضبط الشبكات، TCP/IP، بروتوكولات الأمان، Active Directory", "Python, C++, PHP, JavaScript, HTML/CSS, MySQL": "Python وC++ وPHP وJavaScript وHTML/CSS وMySQL", "Hardware and software troubleshooting, remote support, system backups": "تشخيص أعطال العتاد والبرمجيات، الدعم عن بُعد، النسخ الاحتياطي للأنظمة", "B.Eng. in Cybersecurity Engineering Technologies": "بكالوريوس هندسة في تقنيات هندسة الأمن السيبراني", "Israa University, Baghdad, Oct 2024 to present": "جامعة الإسراء، بغداد، تشرين الأول 2024 – الآن", "Network security, ethical hacking, system administration, and hands-on lab work.": "أمن الشبكات، الاختراق الأخلاقي، إدارة الأنظمة، والمختبرات العملية.", "Cisco CCNA training": "تدريب Cisco CCNA", "IPv4/IPv6 addressing, VLANs, OSPF routing, switching, network security fundamentals, and hands-on lab configuration.": "عنونة IPv4/IPv6 وشبكات VLAN وتوجيه OSPF والتبديل وأساسيات أمن الشبكات وإعداد المختبرات عملياً.", "Arabic and English.": "العربية والإنكليزية.", "The best way to reach me is by email:": "أفضل طريقة للتواصل معي هي البريد الإلكتروني:"};
+var nodes=[],w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,btn=document.getElementById("lang"),T=document.title,M=document.querySelector("meta[name=description]"),ME=M.content;
+while(n=w.nextNode()){var pn=n.parentNode.nodeName;if(pn==="SCRIPT"||pn==="BUTTON")continue;if(AR[n.nodeValue.trim()]){n.__en=n.nodeValue;nodes.push(n)}}
+function set(l){var ar=l==="ar",h=document.documentElement;h.lang=l;h.dir=ar?"rtl":"ltr";
+nodes.forEach(function(n){var o=n.__en,t=o.trim();n.nodeValue=ar?o.replace(t,function(){return AR[t]}):o});
+document.title=ar?"مرتضى كامل – مهندس أمن سيبراني واختصاصي تقنية معلومات":T;
+M.content=ar?"طالب هندسة أمن سيبراني واختصاصي دعم فني في بغداد. لينكس، شبكات، Active Directory، ومختبر منزلي.":ME;
+btn.textContent=ar?"English":"العربية";btn.setAttribute("aria-label",ar?"Switch to English":"التبديل إلى العربية");
+try{localStorage.setItem("lang",l)}catch(e){}}
+var s;try{s=localStorage.getItem("lang")}catch(e){}
+set(s||(/^ar/i.test(navigator.language)?"ar":"en"));
+btn.onclick=function(){set(document.documentElement.lang==="ar"?"en":"ar")};
+})();
+</script>
+</body>
+</html>
